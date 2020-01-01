@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        arr = [];
+        for (let i = 0; i < 3; i++) {
+            arr[i] = +prompt("Nhap vao phan tu thu " + i)
+        }
+        document.write(arr + "<br>")
+
+
+        let min = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+
+        alert("min" + min);
+        alert("max" + max);
+    </script>
+
+
+</body>
+
+</html>
